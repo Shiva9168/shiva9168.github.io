@@ -340,7 +340,7 @@ form textarea {
 
 .contact-button1 {
   width: 160px;
-  background-color: #2768d9;
+  background-color: var(--main-color);
   border: none;
   border-radius: 12px;
   color: white;

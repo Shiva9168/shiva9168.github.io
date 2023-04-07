@@ -32,12 +32,12 @@
  
     <section class="home" id="home">
         <div class="social">
-            <a href="#"><i class='bx bxl-github'></i></a>
-            <a href="#"><i class='bx bxl-linkedin' ></i></a>
-            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="https://github.com/Shiva9168"><i class='bx bxl-github'></i></a>
+            <a href="https://linkedin.com/in/shiva-k-226781271"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://twitter.com/shivasgaming75"><i class='bx bxl-twitter' ></i></a>
         </div>
         <div class="home-img">
-            <img src="Dp.jpg" alt="">
+            <img src="Dp.png" alt="">
         </div>
         <div class="home-text">
             <span>Hello, I'm</span>
@@ -156,12 +156,11 @@
             <span>Connect With Us</span>
         </div>
         <div class="contact-form">
-            <form onsubmit="sendEmail(); reset; return false;" class="center">
-                <input type="text" name="name" id="name" placeholder="Your Name" required>
-                <input type="text" name="subject" id="subject" placeholder="Write Subject here" required>               
+            <form id="myForm" class="center">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>            
                 <input type="email" name="email" id="email" placeholder="Your Email" required>
-                <textarea name="message" id="messsage" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
-                <button type="submit" class="contact-button1">Send</button>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
+                <button class="contact-button1" type="submit"">Send</button>
             </form>
         </div>
     </section>
@@ -169,10 +168,11 @@
     <div class="footer">
         <h2>Shiva's Gaming Zone</h2>
         <div class="footer-social">
-            <a href="#"><i class='bx bxl-linkedin' ></i></a>
-            <a href="#"><i class='bx bxl-twitter' ></i></a>
-            <a href="#"><i class='bx bxl-instagram' ></i></a>
-            <a href="#"><i class='bx bxl-youtube' ></i></a>
+            <a href="https://linkedin.com/in/shiva-k-226781271"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://twitter.com/shivasgaming75"><i class='bx bxl-twitter' ></i></a>
+            <a href="https://instagram.com/shivas_gamingzone"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://youtube.com/@shivasgamingzone"><i class='bx bxl-youtube' ></i></a>
+            <a href="https://github.com/Shiva9168"><i class='bx bxl-github' ></i></a>
         </div>
  
     </div>
@@ -185,5 +185,37 @@
  
     <!-- Link To JS -->
     <script src="./js/script.js"></script>
+    <!-- Include the SMTPJS library in your HTML -->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script>
+  // Set up a function to handle the form submission
+  document.getElementById("myForm").addEventListener("submit", function(event) {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+
+    // Collect the form input values
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;  
+    var message = document.getElementById("message").value;
+    var body = 'name: '+name + '<br/> email: '+email + '<br/> message: '+message
+
+    // Use SMTPJS to send the email
+    Email.send({
+      SecureToken: '4bdcd8a9-4b2f-4379-858b-75546bb099b2',
+      To: "shivasgaming75@gmail.com", // Replace with your recipient email address
+      From: 'heheboimadhav@gmail.com', // Use the user's email address as the "from" address
+      Subject: "New message from " + name, // Customize the email subject
+      Body: body // Use the user's message as the email body
+    }).then(function(response) {
+      // Show a success message to the user
+      alert("Message sent successfully!");
+    }).catch(function(error) {
+      // Show an error message to the user
+      alert("An error occurred while sending the message.");
+    });
+  });
+</script>
+
 </body>
 </html>

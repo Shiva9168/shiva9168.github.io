@@ -1,29 +1,30 @@
-	// Sticky Navbar
-    let header = document.querySelector('header');
-    let menu = document.querySelector('#menu-icon');
-    let navbar = document.querySelector('.navbar');
-     
-     
-    window.addEventListener('scroll', () => {
-        header.classList.toggle('shadow', window.scrollY > 0);
-    });
-     
-    menu.onclick = () => {
-        navbar.classList.toggle('active');
+// Dark Mode
+let darkmode = document.querySelector('#darkmode');
+
+// check if user preference is already saved in local storage
+let isDarkMode = localStorage.getItem('isDarkMode');
+
+// if user preference is saved, update the UI accordingly
+if (isDarkMode) {
+  if (isDarkMode === 'true') {
+    darkmode.classList.replace('bx-moon','bx-sun');
+    document.body.classList.add('active');
+  } else {
+    darkmode.classList.replace('bx-sun','bx-moon');
+    document.body.classList.remove('active');
+  }
+}
+
+darkmode.onclick = () => {
+    if(darkmode.classList.contains('bx-moon')){
+        darkmode.classList.replace('bx-moon','bx-sun');
+        document.body.classList.add('active');
+        // save the user's preference in local storage
+        localStorage.setItem('isDarkMode', 'true');
+    }else{
+        darkmode.classList.replace('bx-sun','bx-moon');
+        document.body.classList.remove('active');
+        // save the user's preference in local storage
+        localStorage.setItem('isDarkMode', 'false');
     }
-    window.onscroll = () => {
-        navbar.classList.remove('active');
-    }
-     
-    // Dark Mode
-    let darkmode = document.querySelector('#darkmode');
-     
-    darkmode.onclick = () => {
-        if(darkmode.classList.contains('bx-moon')){
-            darkmode.classList.replace('bx-moon','bx-sun');
-            document.body.classList.add('active');
-        }else{
-            darkmode.classList.replace('bx-sun','bx-moon');
-            document.body.classList.remove('active');
-        }
-    }
+}
