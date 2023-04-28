@@ -14,6 +14,7 @@
   --main-color: #033a80;
   --bg-color: #fff;
   --text-color: #0f0c27;
+  --aboutme-clr: #0000ff;
   --hover: hsl(260, 100%, 51%);
  
   --big-font: 3.2rem;
@@ -26,6 +27,7 @@ section {
 body.active {
   --text-color: #fff;
   --bg-color: #0f0c27;
+  --aboutme-clr: #FFC107;
 }
 body {
   background: var(--bg-color);
@@ -161,6 +163,10 @@ header.shadow {
   font-size: var(--p-font);
   font-weight: 400;
   text-align: justify;
+}
+.about-textt a {
+  color: var(--aboutme-clr);
+  text-decoration: underline;
 }
 .information {
   margin: 1rem 0 1.4rem;
@@ -386,6 +392,7 @@ span {
 
 .modal.active {
   transform: translate(-50%, -50%) scale(1);
+  z-index: 11;
 }
 
 .modal-header {
@@ -416,6 +423,26 @@ span {
   padding: 10px 15px;
 }
 
+.slides {
+  max-width:500px
+}
+
+.slides img {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+  transform: none !important;
+  width: 100%;
+}
+
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
 #overlay {
   position: fixed;
   opacity: 0;
@@ -431,6 +458,7 @@ span {
 #overlay.active {
   opacity: 1;
   pointer-events: all;
+  z-index: 10;
 }
 
 form input,
