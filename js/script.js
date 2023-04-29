@@ -1,7 +1,8 @@
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
-
+const menuIcon = document.querySelector('#menu-icon');
+const navbar = document.querySelector('#myLinks');
 
 // Dark Mode
 let darkmode = document.querySelector('#darkmode');
@@ -67,3 +68,49 @@ function closeModal(modal) {
   modal.classList.remove('active')
   overlay.classList.remove('active')
 }
+
+
+menuIcon.addEventListener('click', () => {
+  navbar.classList.toggle('active');
+});
+
+$(document).ready(function() {
+  $('#menu-icon').click(function() {
+    $('#myLinks').toggleClass('active');
+    $('#menu-icon').toggleClass('active');
+  });
+
+  $('#myLinks a').click(function() {
+    $('#myLinks').removeClass('active');
+    $('#menu-icon').removeClass('active');
+  });
+});
+
+function closeMenu() {
+  $('#myLinks').removeClass('active');
+  $('#menu-icon').removeClass('active');
+}
+
+$(document).ready(function() {
+  // Open the menu when the hamburger icon is clicked
+  $("#menu-icon").click(function() {
+    $("#myLinks").toggleClass("active");
+    $("#menu-icon").toggleClass("active");
+  });
+
+  // Close the menu when a link is clicked
+  $("#myLinks a").click(function() {
+    $("#myLinks").removeClass("active");
+    $("#menu-icon").removeClass("active");
+  });
+
+  // Close the menu when the user clicks outside of it
+  $(document).click(function(event) {
+    if (!$(event.target).closest("#menu-icon").length && !$(event.target).closest("#myLinks").length) {
+      $("#myLinks").removeClass("active");
+      $("#menu-icon").removeClass("active");
+    }
+  });
+});
+
+

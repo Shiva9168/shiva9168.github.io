@@ -83,6 +83,10 @@ header.shadow {
 .navbar a:hover {
   color: var(--hover);
 }
+.navbar #myLinks {
+  display: none;
+}
+
 #menu-icon {
   font-size: 24px;
   cursor: pointer;
@@ -93,6 +97,69 @@ header.shadow {
   font-size: 22px;
   cursor: pointer;
 }
+
+/* Navbar transition start */
+
+.bx-menu {
+  width: 30px;
+  height: 30px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  #menu-icon {
+    display: none;
+  }
+  
+  .navbar {
+    display: flex;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+  }
+  .navbar.active {
+    height: auto;
+  }
+  
+  
+  #menu-icon .icon {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+  }
+  
+  /* style for the active (open) hamburger menu icon */
+  #menu-icon.active .icon:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  /* style for the active (open) hamburger menu icon */
+  #menu-icon.active .icon:nth-child(2) {
+    opacity: 0;
+  }
+  
+  /* style for the active (open) hamburger menu icon */
+  #menu-icon.active .icon:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+  
+  /* show the navbar links when the hamburger menu is active */
+  #myLinks.active {
+    display: block;
+    transition: max-height 0.5s ease-in-out;
+    max-height: 500px;
+  }
+}
+
+
+
+/* Navbar Transition End */
+
+
+
 .home {
   position: relative;
   width: 100%;

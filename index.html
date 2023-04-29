@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Portfolio Website</title>
+    <link rel="icon" type="image/x-icon" href="./Imgs/Logo.png">
     <!-- Link To CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Box Icons -->
@@ -14,24 +15,23 @@
   <style>
   .mySlides {display:none;}
   </style>
+  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
  
 </head>
 <body>
-    <!-- Navbar -->
     <header>
         <a href="#" class="logo">Shiva's Gaming Zone</a>
- 
         <div class="bx bx-menu" id="menu-icon"></div>
- 
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <div class="bx bx-moon" id="darkmode"></div>
+        <ul class="navbar" id="myLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><div class="bx bx-moon" id="darkmode"></div></li>
         </ul>
-    </header>
+      </header>
+      
     <!-- Home -->
  
     <section class="home" id="home">
@@ -41,7 +41,7 @@
             <a href="https://twitter.com/shivasgaming75"><i class='bx bxl-twitter' ></i></a>
         </div>
         <div class="home-img">
-            <img src="Dp.png" alt="">
+            <img src="./Imgs/Dp.png" alt="">
         </div>
         <div class="home-text">
             <span>Hello, I'm</span>
@@ -62,7 +62,7 @@
         <!-- About Content -->
         <div class="about-container">
             <div class="about-img">
-                <img src="011.jpeg" alt="">
+                <img src="./Imgs/011.jpeg" alt="">
             </div>
             <div class="about-text">
                 <p class="about-textt">Hello, I'm an 18-year-old guy from India with a passion for creating and playing video games. Currently, I'm working on a game codenamed <a data-modal-target="#modal2">Project Echo</a>, and I also have experience in web development. As a big fan of technology, I always try to save time by using tools, automation, and AI. My ultimate goal is to become a successful game developer, and I have experience working with Unreal Engine, Unity, Blender 3D modeling, and am currently learning animation, UI/UX, and ZBrush sculpting. Thank you for visiting my portfolio.</p>
@@ -121,7 +121,7 @@
                 </div>
             </div>
             <div class="skills-img">
-                <img src="123.png" alt="">
+                <img src="./Imgs/123.png" alt="">
             </div>
         </div>
  
@@ -134,7 +134,7 @@
         </div>
         <div class="portfolio-content">
             <div class="work">
-                <img src="ProjectEchoPlaceholder.png" alt="">
+                <img src="./Imgs/ProjectEchoPlaceholder.png" alt="">
                 <div class="layer">
                     <h3>Project Echo</h3>
                     <p>Project Echo is Project Echo is a story-driven, action-packed adventure game that follows the journey of a young protagonist as she navigates through challenging obstacles and overcomes them to unravel the mysteries of her past.</p>
@@ -156,7 +156,7 @@
                 </div>
             </div>
             <div class="work">
-                <img src="Saturn Logo.png" alt="">
+                <img src="./Imgs/Saturn Logo.png" alt="">
                 <div class="layer">
                     <h3>Discord Music Bot</h3>
                     <p>Saturn Music was a free 24/7 Discord music bot that delivered high-quality music to your Discord server. The music bot was made to be easy to plug into your Discord server with no configuration.</p>
@@ -174,7 +174,7 @@
                 </div>
             </div>
             <div class="work">
-                <img src="gas station icon.png" alt="">
+                <img src="./Imgs/gas station icon.png" alt="">
                 <div class="layer">
                     <h3>Discord Idle Tycoon Bot</h3>
                     <p>Gas Station Clicker was a Discord idle tycoon bot where users could manage a virtual gas station by buying fuel and earning money. Collaboratively developed by two bot developers, it provided a unique and enjoyable experience for users.</p>
@@ -194,7 +194,7 @@
                 </div>
             </div>
             <div class="work">
-                <img src="placeholder.png" alt="">
+                <img src="./Imgs/placeholder.png" alt="">
                 <div class="layer">
                     <h3>Parody Game Projects</h3>
                     <p>Developed various projects inspired by classic mobile games, movies & TV shows. Parody games with unique twists, creative gameplay mechanics & user experience.</p>
@@ -205,9 +205,9 @@
                           <button data-close-button class="close-button">&times;</button>
                         </div>
                         <div class="w3-content w3-section slides">
-                            <img class="mySlides" src="Subwaysurfers01.png"alt="">
-                            <img class="mySlides" src="SubwaySurfers.png"alt="">
-                            <img class="mySlides" src="AngryBirdUE5.png" alt="">
+                            <img class="mySlides" src="./Imgs/Subwaysurfers01.png"alt="">
+                            <img class="mySlides" src="./Imgs/SubwaySurfers.png"alt="">
+                            <img class="mySlides" src="./Imgs/AngryBirdUE5.png" alt="">
                           </div>
                         <div class="modal-body">
                             I have also developed a number of projects inspired by classic mobile games, movies, and TV shows. These projects include parody games that put a unique spin on the original concepts. While I am not currently able to showcase the visual aspects of these projects due to confidentiality reasons, I am proud of the creative gameplay mechanics and overall user experience that I have developed.
@@ -230,6 +230,7 @@
                 <input type="text" name="name" id="name" placeholder="Your Name" required>            
                 <input type="email" name="email" id="email" placeholder="Your Email" required>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
+                <div class="h-captcha" data-sitekey="7c6909e1-98fd-45b9-87ca-e7bd14ee0e42"></div>
                 <button class="contact-button1" type="submit"">Send</button>
             </form>
         </div>
@@ -252,7 +253,9 @@
     </div>
  
  
- 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <!-- Link To JS -->
     <script src="./js/script.js"></script>
     <!-- Include the SMTPJS library in your HTML -->
@@ -263,6 +266,14 @@
   document.getElementById("myForm").addEventListener("submit", function(event) {
     // Prevent the default form submission behavior
     event.preventDefault();
+
+        // Check if the user has completed the hcaptcha
+    var hcaptchaResponse = grecaptcha.getResponse();
+    if (hcaptchaResponse.length === 0) {
+      // If the user hasn't completed the hcaptcha, show an error message
+      alert("Please complete the hcaptcha before submitting the form.");
+      return;
+    }
 
     // Collect the form input values
     var name = document.getElementById("name").value;
@@ -303,6 +314,20 @@
       setTimeout(carousel, 2000); // Change image every 2 seconds
     }
     </script>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+    </script>
+
+
+
 
 </body>
 </html>
