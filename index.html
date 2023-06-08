@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Portfolio Website</title>
+    <title>Shiva's Gaming Zone</title>
     <link rel="icon" type="image/x-icon" href="./Imgs/Logo.png">
     <!-- Link To CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Box Icons -->
-    <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-  .mySlides {display:none;}
-  </style>
-  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
- 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .mySlides {display:none;}
+    </style>
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <a href="#" class="logo">Shiva's Gaming Zone</a>
         <div class="bx bx-menu" id="menu-icon"></div>
+        <!-- Navigation Menu -->        
         <ul class="navbar" id="myLinks">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -31,15 +31,16 @@
           <li><div class="bx bx-moon" id="darkmode"></div></li>
         </ul>
       </header>
-      
-    <!-- Home -->
- 
+    
+    <!-- Home Section -->
     <section class="home" id="home">
+        <!-- Social Media Links -->        
         <div class="social">
             <a href="https://github.com/Shiva9168"><i class='bx bxl-github'></i></a>
             <a href="https://www.linkedin.com/in/sai-rishik-k-226781271/"><i class='bx bxl-linkedin' ></i></a>
             <a href="https://twitter.com/shivasgaming75"><i class='bx bxl-twitter' ></i></a>
         </div>
+            <!-- Display Profile Image -->        
         <div class="home-img">
             <img src="./Imgs/Dp.png" alt="">
         </div>
@@ -49,7 +50,6 @@
             <h2>Game Developer</h2>
             <p>I love creating and playing video games, and my goal is to become a successful game developer. I have experience in Unreal Engine and Unity, and I'm always striving to create immersive and engaging gaming experiences.</p>
             <a href="#about" class="btn">About Me</a>
-            <a href="https://gofund.me/cceae284" class="btn">Donate on GoFundMe</a>
         </div>
  
     </section>
@@ -61,18 +61,25 @@
         </div>
         <!-- About Content -->
         <div class="about-container">
+            <!-- About Image -->
             <div class="about-img">
                 <img src="./Imgs/011.jpeg" alt="">
             </div>
+            <!-- About Me Introduction -->
             <div class="about-text">
-                <p class="about-textt">Hello, I'm an 18-year-old guy from India with a passion for creating and playing video games. Currently, I'm working on a game codenamed <a data-modal-target="#modal2">Project Echo</a>, and I also have experience in web development. As a big fan of technology, I always try to save time by using tools, automation, and AI. My ultimate goal is to become a successful game developer, and I have experience working with Unreal Engine, Unity, Blender 3D modeling, and am currently learning animation, UI/UX, and ZBrush sculpting. Thank you for visiting my portfolio.</p>
+                <p class="about-textt">Hello, I'm an 18-year-old guy from India with a passion for creating and playing video games.
+                    Currently, I'm working on a game codenamed <a data-modal-target="#modal2">Project Echo</a>,
+                    and I also have experience in web development. As a big fan of technology, I always try to save
+                    time by using tools, automation, and AI. My ultimate goal is to become a successful game developer,
+                    and I have experience working with Unreal Engine, Unity, Blender 3D modeling, and am currently
+                    learning animation, UI/UX, and ZBrush sculpting. Thank you for visiting my portfolio.</p>
+                <!-- Information Boxes -->
                 <div class="information">
-                    <!-- Box 1 -->
                     <div class="info-box">
                         <i class='bx bxs-user' ></i>
                         <span>Shiva</span>
                     </div>
-                    <!-- Box 2 -->
+
                     <div class="info-box">
                         <i class='bx bxs-envelope' ></i>
                         <span>shivasgaming75@gmail.com</span>
@@ -91,28 +98,28 @@
         <!-- Skills Content -->
         <div class="skills-container">
             <div class="bars">
-                <!-- Box 1 -->
+                <!-- Skill Bar 1: HTML -->
                 <div class="bars-box">
                     <h3>HTML</h3>
                     <span>80%</span>
                     <div class="light-bar"></div>
                     <div class="percent-bar html-bar"></div>
                 </div>
-                <!-- Box 2 -->
+                <!-- Skill Bar 2: CSS -->
                 <div class="bars-box">
                     <h3>CSS</h3>
                     <span>70%</span>
                     <div class="light-bar"></div>
                     <div class="percent-bar css-bar"></div>
                 </div>
-                <!-- Box 3 -->
+                <!-- Skill Bar 3: JS -->
                 <div class="bars-box">
                     <h3>JavaScript</h3>
                     <span>70%</span>
                     <div class="light-bar"></div>
                     <div class="percent-bar js-bar"></div>
                 </div>
-                <!-- Box 4 -->
+                <!-- Skill Bar 4: C++ -->
                 <div class="bars-box">
                     <h3>C++</h3>
                     <span>55%</span>
@@ -120,6 +127,7 @@
                     <div class="percent-bar cpp-bar"></div>
                 </div>
             </div>
+            <!-- Skills Image -->            
             <div class="skills-img">
                 <img src="./Imgs/123.png" alt="">
             </div>
@@ -133,12 +141,14 @@
             <span>Our Recent Work</span>
         </div>
         <div class="portfolio-content">
+            <!-- Work Item 1: Project Echo -->
             <div class="work">
                 <img src="./Imgs/ProjectEchoPlaceholder.png" alt="">
                 <div class="layer">
                     <h3>Project Echo</h3>
                     <p>Project Echo is Project Echo is a story-driven, action-packed adventure game that follows the journey of a young protagonist as she navigates through challenging obstacles and overcomes them to unravel the mysteries of her past.</p>
                     <a class="redirect" data-modal-target="#modal2"><i class='bx bx-link-external' style='color:#0c0c0c' ></i></a>
+                    <!-- Modal for Project Echo -->
                     <div class="modal" id="modal2">
                         <div class="modal-header">
                           <div class="title">Project Echo</div>
@@ -155,12 +165,14 @@
                       <div id="overlay"></div>
                 </div>
             </div>
+            <!-- Work Item 2: Discord Music Bot -->
             <div class="work">
                 <img src="./Imgs/Saturn Logo.png" alt="">
                 <div class="layer">
                     <h3>Discord Music Bot</h3>
                     <p>Saturn Music was a free 24/7 Discord music bot that delivered high-quality music to your Discord server. The music bot was made to be easy to plug into your Discord server with no configuration.</p>
                     <a class="redirect" data-modal-target="#modal1"><i class='bx bx-link-external' style='color:#0c0c0c' ></i></a>
+                    <!-- Modal for Discord Music Bot -->
                     <div class="modal" id="modal1">
                         <div class="modal-header">
                           <div class="title">Saturn Music</div>
@@ -173,12 +185,14 @@
                       </div>
                 </div>
             </div>
+            <!-- Work Item 3: Discord Idle Tycoon Bot -->
             <div class="work">
                 <img src="./Imgs/gas station icon.png" alt="">
                 <div class="layer">
                     <h3>Discord Idle Tycoon Bot</h3>
                     <p>Gas Station Clicker was a Discord idle tycoon bot where users could manage a virtual gas station by buying fuel and earning money. Collaboratively developed by two bot developers, it provided a unique and enjoyable experience for users.</p>
                     <a class="redirect" data-modal-target="#modal"><i class='bx bx-link-external' style='color:#0c0c0c' ></i></a>
+                    <!-- Modal for Discord Idle Tycoon Bot -->
                     <div class="modal" id="modal">
                         <div class="modal-header">
                           <div class="title">Gas Station Clicker</div>
@@ -193,17 +207,20 @@
                       <div id="overlay"></div>
                 </div>
             </div>
+            <!-- Work Item 4: Parody Game Projects -->
             <div class="work">
                 <img src="./Imgs/placeholder.png" alt="">
                 <div class="layer">
                     <h3>Parody Game Projects</h3>
                     <p>Developed various projects inspired by classic mobile games, movies & TV shows. Parody games with unique twists, creative gameplay mechanics & user experience.</p>
                     <a class="redirect" data-modal-target="#modal3"><i class='bx bx-link-external' style='color:#0c0c0c' ></i></a>
+                    <!-- Modal for Parody Game Projects -->
                     <div class="modal" id="modal3">
                         <div class="modal-header">
                           <div class="title">Parody Game Projects</div>
                           <button data-close-button class="close-button">&times;</button>
                         </div>
+                        <!-- Slideshow Images -->
                         <div class="w3-content w3-section slides">
                             <img class="mySlides" src="./Imgs/Subwaysurfers01.png"alt="">
                             <img class="mySlides" src="./Imgs/SubwaySurfers.png"alt="">
@@ -226,16 +243,19 @@
             <span>Connect With Us</span>
         </div>
         <div class="contact-form">
-            <form id="myForm" class="center">
+            <form id="myForm" class="center" action="https://formsubmit.co/b1158234038ead0ec8276ceea8d7fc3b" method="POST">
                 <input type="text" name="name" id="name" placeholder="Your Name" required>            
                 <input type="email" name="email" id="email" placeholder="Your Email" required>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
-                <div class="h-captcha" data-sitekey="7c6909e1-98fd-45b9-87ca-e7bd14ee0e42"></div>
-                <button class="contact-button1" type="submit"">Send</button>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <!-- hCaptcha integration for spam prevention -->               
+                <div class="h-captcha" data-sitekey="7c6909e1-98fd-45b9-87ca-e7bd14ee0e42"></div>  
+                <button class="contact-button1" type="submit">Send</button>
             </form>
         </div>
     </section>
-    <!-- Footer -->
+    <!-- Footer Section -->
     <div class="footer">
         <h2>Shiva's Gaming Zone</h2>
         <div class="footer-social">
@@ -247,85 +267,100 @@
         </div>
  
     </div>
-    <!-- Copyright -->
-    <div class="copyright">
-        <p>Copyright © <a style="color: yellow;">ShivasGamingZone</a> 2023. | All Right Reserved.</p>
-    </div>
- 
- 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Copyright Section -->
+<div class="copyright">
+    <p>&copy; 2023 Shiva's Gaming Zone. Licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="nofollow">MIT License</a>.</p>
+</div>
 
-    <!-- Link To JS -->
-    <script src="./js/script.js"></script>
-    <!-- Include the SMTPJS library in your HTML -->
-<script src="https://smtpjs.com/v3/smtp.js"></script>
+ 
+ 
+<!-- jQuery Library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Link To Custom JS -->
+<script src="./js/script.js"></script>
+
 
 <script>
-  // Set up a function to handle the form submission
+  // Add event listener to the form submit event
   document.getElementById("myForm").addEventListener("submit", function(event) {
-    // Prevent the default form submission behavior
-    event.preventDefault();
+    event.preventDefault(); // Prevent the form from submitting
 
-        // Check if the user has completed the hcaptcha
-    var hcaptchaResponse = grecaptcha.getResponse();
+    var form = this; // Get the form element
+    var hcaptchaResponse = grecaptcha.getResponse(); // Get the hCaptcha response
+
     if (hcaptchaResponse.length === 0) {
-      // If the user hasn't completed the hcaptcha, show an error message
-      alert("Please complete the hcaptcha before submitting the form.");
+      alert("Please complete the hCaptcha before submitting the form."); // Display an alert if hCaptcha is not completed
       return;
     }
 
-    // Collect the form input values
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;  
-    var message = document.getElementById("message").value;
-    var body = 'name: '+name + '<br/> email: '+email + '<br/> message: '+message
+    // Add the hCaptcha response to the form data
+    var formData = new FormData(form);
+    formData.append("h-captcha-response", hcaptchaResponse);
 
-    // Use SMTPJS to send the email
-    Email.send({
-      SecureToken: '4bdcd8a9-4b2f-4379-858b-75546bb099b2',
-      To: "shivasgaming75@gmail.com", // Replace with your recipient email address
-      From: 'heheboimadhav@gmail.com', // Use the user's email address as the "from" address
-      Subject: "New message from " + name, // Customize the email subject
-      Body: body // Use the user's message as the email body
-    }).then(function(response) {
-      // Show a success message to the user
-      alert("Message sent successfully!");
-    }).catch(function(error) {
-      // Show an error message to the user
-      alert("An error occurred while sending the message.");
-    });
+    // Send the form data to the server using fetch
+    fetch(form.action, {
+      method: form.method,
+      body: formData
+    })
+      .then(function(response) {
+        if (response.ok) {
+          alert("Message sent successfully!"); // Display success message
+          form.reset(); // Reset the form
+        } else {
+          alert("An error occurred while sending the message."); // Display error message
+        }
+      })
+      .catch(function(error) {
+        console.error(error); // Log any errors to the console
+        alert("An error occurred while sending the message."); // Display error message
+      });
+
+    // Reset hCaptcha with a 5-second delay
+    setTimeout(resetHCaptcha, 5000);
   });
+
+  // Function to reset hCaptcha
+  function resetHCaptcha() {
+    hcaptcha.reset(); // Reset hCaptcha
+  }
+</script>
+<script>
+  function resetHCaptcha() {
+    // Reset hCaptcha
+    hcaptcha.reset();
+  }
 </script>
 
 <script>
-    var myIndex = 0;
-    carousel();
-    
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-      }
-      myIndex++;
-      if (myIndex > x.length) {myIndex = 1}    
-      x[myIndex-1].style.display = "block";  
-      setTimeout(carousel, 2000); // Change image every 2 seconds
+  var myIndex = 0;
+  carousel(); // Call the carousel function
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; // Hide all slides
     }
-    </script>
+    myIndex++;
+    if (myIndex > x.length) {
+      myIndex = 1; // Reset index if it exceeds slide count
+    }
+    x[myIndex - 1].style.display = "block"; // Display current slide
+    setTimeout(carousel, 2000); // Change slide every 2 seconds
+  }
+</script>
 
 <script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.className === "navbar") {
-        x.className += " responsive";
-      } else {
-        x.className = "navbar";
-      }
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.className === "navbar") {
+      x.className += " responsive"; // Add responsive class for mobile navigation
+    } else {
+      x.className = "navbar"; // Remove responsive class
     }
-    </script>
-
+  }
+</script>
 
 
 
