@@ -489,6 +489,10 @@ span {
   padding: 10px 15px;
 }
 
+.modal-body a {
+  color: var(--aboutme-clr);
+}
+
 .slides {
   max-width:500px
 }
