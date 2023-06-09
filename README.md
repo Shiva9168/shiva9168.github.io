@@ -28,11 +28,13 @@ To run this project locally, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/Shiva9168/Portfolio-Website.git`
 2. Open the project in your preferred code editor.
-3. Open the `index.html` file in your web browser.
-4. Replace `action="https://formsubmit.co/b1158234038ead0ec8276ceea8d7fc3b"` in line 246 of the `index.html` file with your own email submission URL.
-5. Replace `data-sitekey="7c6909e1-98fd-45b9-87ca-e7bd14ee0e42"` in line 253 of the `index.html` file with your own hCaptcha site key.
+3. Replace `action="https://formsubmit.co/b1158234038ead0ec8276ceea8d7fc3b"` in line 246 of the `index.html` file with your own email submission URL.
+4. Replace `data-sitekey="7c6909e1-98fd-45b9-87ca-e7bd14ee0e42"` in line 253 of the `index.html` file with your own hCaptcha site key.
+5. Open the `index.html` file in your web browser.
 
-> Note: To obtain the hCaptcha site key, you can sign up on the hCaptcha website (https://hcaptcha.com/) and create a new site. The site key will be provided to you after the registration process. 
+**Note:**
+>To obtain the hCaptcha site key, you can sign up on the hCaptcha website (https://hcaptcha.com/) and create a new site. The site key will be provided to you after the registration process.
+>
 >To use a custom email submission service, you can sign up on formsubmit.co (https://formsubmit.co/) and obtain your own email submission URL.
 
 ## Contributing
