@@ -4,7 +4,7 @@ This is a repository for my personal portfolio website. It showcases my skills, 
 
 ## Portfolio Link
 
-You can visit my portfolio website [here](https://shiva9168.github.io/Portfolio-Website/).
+You can visit my portfolio website [here](https://shiva9168.github.io/).
 
 ## Languages
 
