@@ -9,19 +9,19 @@
     <meta name="description" content="I'm Shiva, a game developer crafting immersive experiences in Unreal Engine and Unity. Let's embark on unforgettable gaming adventures together!">
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://shiva9168.github.io/">
+    <meta property="og:url" content="https://shivadev.com/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Shiva - Game Developer">
     <meta property="og:description" content="I'm Shiva, a game developer crafting immersive experiences in Unreal Engine and Unity. Let's embark on unforgettable gaming adventures together!">
-    <meta property="og:image" content="https://shiva9168.github.io/Imgs/Banner.png">
+    <meta property="og:image" content="https://shivadev.com/Imgs/Banner.png">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="shiva9168.github.io">
-    <meta property="twitter:url" content="https://shiva9168.github.io/">
+    <meta property="twitter:domain" content="shivadev.com">
+    <meta property="twitter:url" content="https://shivadev.com/">
     <meta name="twitter:title" content="Shiva - Game Developer">
     <meta name="twitter:description" content="I'm Shiva, a game developer crafting immersive experiences in Unreal Engine and Unity. Let's embark on unforgettable gaming adventures together!">
-    <meta name="twitter:image" content="https://shiva9168.github.io/Imgs/Banner.png">
+    <meta name="twitter:image" content="https://shivadev.com/Imgs/Banner.png">
 
     <!--Fav Icon-->
     <link rel="icon" type="image/x-icon" href="../Imgs/Logo.png">
@@ -30,8 +30,10 @@
     <!-- Box Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        /* Next & previous buttons */
+    <script src="https://kit.fontawesome.com/1c379c2efe.js" crossorigin="anonymous"></script>
+
+<style>
+/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -52,6 +54,7 @@
 .next {
   right: 25%;
   border-radius: 3px 0 0 3px;
+  transition: right 0.5s ease; /* Smooth transition for width changes */
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -79,6 +82,7 @@
   width: 50%;
   color: white;
   display: inline-block;
+  transition: width 0.5s ease;
 }
 
 .row:after {
@@ -91,6 +95,7 @@
 .column {
   float: left;
   width: 16.66%;
+  transition: width 0.5s ease;
 }
 
 /* Add a transparency effect for thumnbail images */
@@ -119,8 +124,26 @@
   vertical-align: middle;
   width: 50%;
   display: inline-block;
+  transition: width 0.5s ease; 
 }
-    </style>
+
+@media only screen and (max-width: 1000px) { /* Adjust this width for smaller screens */
+  .mySlides img {
+    width: 100%;
+  }
+  .column {
+  width: 33.32%;
+}
+  .caption-container {
+    width: 100%;
+  }
+  .next {
+  right: 0%;
+  border-radius: 3px 0 0 3px;
+}
+}
+</style>
+    
     <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-38CPT4ZLPX"></script>
@@ -151,10 +174,10 @@
     <section class="home" id="home">
         <!-- Social Media Links -->        
         <div class="social">
-            <a href="https://github.com/Shiva9168"><i class='bx bxl-github'></i></a>
-            <a href="https://www.linkedin.com/in/shiva-k-226781271/"><i class='bx bxl-linkedin' ></i></a>
-            <a href="https://twitter.com/shivasgaming75"><i class='bx bxl-twitter' ></i></a>
-            <a href="https://patreon.com/shivasgaming"><i class='bx bxl-patreon' ></i></a>
+            <a href="https://github.com/Shiva9168"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/shiva-k-226781271/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/shivasgaming75"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://patreon.com/shivasgaming"><i class="fa-brands fa-patreon"></i></a>
         </div>
             <!-- Display Profile Image -->        
         <div class="home-img">
@@ -260,6 +283,8 @@
                 <input type="text" name="name" id="name" placeholder="Your Name" required>            
                 <input type="email" name="email" id="email" placeholder="Your Email" required>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
+                <!-- Honeypot field -->
+                <input type="text" name="secret" id="itsasecret" placeholder="BOT" style="display: none;">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
                 <!-- hCaptcha integration for spam prevention -->               
@@ -272,18 +297,18 @@
     <div class="footer">
         <h2>Shiva's Gaming Zone</h2>
         <div class="footer-social">
-            <a href="https://www.linkedin.com/in/shiva-k-226781271/"><i class='bx bxl-linkedin' ></i></a>
-            <a href="https://twitter.com/shivasgaming75"><i class='bx bxl-twitter' ></i></a>
-            <a href="https://instagram.com/shivas_gamingzone"><i class='bx bxl-instagram' ></i></a>
-            <a href="https://youtube.com/@shivasgamingzone"><i class='bx bxl-youtube' ></i></a>
-            <a href="https://patreon.com/shivasgaming"><i class='bx bxl-patreon' ></i></a>
-            <a href="https://github.com/Shiva9168"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.linkedin.com/in/shiva-k-226781271/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/shivasgaming75"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://instagram.com/shivas_gamingzone"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com/@shivasgamingzone"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://patreon.com/shivasgaming"><i class="fa-brands fa-patreon"></i></a>
+            <a href="https://github.com/Shiva9168"><i class="fa-brands fa-github"></i></a>
         </div>
  
     </div>
 <!-- Copyright Section -->
 <div class="copyright">
-    <p>&copy; 2023 <a href="https://shiva9168.github.io/">Shiva's Gaming Zone</a>. Licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="nofollow">MIT License</a>.</p>
+  <p>&copy; 2024 <a href="https://shivadev.com/" target="_blank" rel="nofollow">Shiva's Gaming Zone</a>. Licensed under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="nofollow">MIT License</a>. Check out the source code on  <a href="https://github.com/Shiva9168/shiva9168.github.io" target="_blank" rel="nofollow ">GitHub</a>! </p>
 </div>
 
  
@@ -305,6 +330,14 @@
 
     if (hcaptchaResponse.length === 0) {
       alert("Please complete the hCaptcha before submitting the form."); // Display an alert if hCaptcha is not completed
+      return;
+    }
+
+    // Check honeypot field
+    if (document.getElementById("itsasecret").value !== "") {
+      alert("Bot submission detected. Please try again later."); // Display an alert if honeypot field is filled
+      form.reset();
+      hcaptcha.reset();
       return;
     }
 

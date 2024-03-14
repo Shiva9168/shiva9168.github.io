@@ -605,11 +605,11 @@ form textarea {
   font-size: 25px;
   margin-left: 10px;
   text-align: center;
-  line-height: 40px;
+  line-height: 42px;
   background-color: #fff;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
 }
 .copyright {
   padding: 20px;
