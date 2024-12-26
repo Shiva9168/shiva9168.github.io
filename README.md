@@ -26,10 +26,10 @@ This single-page portfolio website consists of the following sections:
 
 To run this project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/Shiva9168/Portfolio-Website.git`
+1. Clone the repository: `git clone https://github.com/Shiva9168/shiva9168.github.io.git`
 2. Open the project in your preferred code editor.
-3. Replace `action="https://formsubmit.co/b1158234038ead0ec8276ceea8d7fc3b"` in the `index.html` file with your own email submission URL.
-4. Replace `data-sitekey="7c6909e1-98fd-45b9-87ca-e7bd14ee0e42"` in the `index.html` file with your own hCaptcha site key.
+3. Replace `action="https://formsubmit.co/XXXXX"` in the `script.js` file with your own email submission URL.
+4. Replace `data-sitekey="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"` in the `./contact/index.html` file with your own hCaptcha site key.
 5. Replace the Google CMS tag `'G-XXXXXXXXXX'` with your own CMS tag in the `<head>` section.
 6. Open the `index.html` file in your web browser.
 

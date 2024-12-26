@@ -3,42 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Shiva - Game Developer</title>
+    <title>SHIVA Game Developer</title>
+    <meta name="description" content="">
+    <!--Fav Icon-->
+    <link rel="icon" type="image/x-icon" href="../imgs/Logo.ico">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://shivadev.com/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Shiva - Game Developer">
-    <meta property="og:description" content="I'm Shiva, I’m a student making games and sharing tutorials on YouTube. My goal is to become a successful Game Developer!">
-    <meta property="og:image" content="https://shivadev.com/imgs/profile.webp">
+    <meta property="og:description" content="I'm Shiva, a game developer crafting immersive experiences in Unreal Engine and Unity. Let's embark on unforgettable gaming adventures together!">
+    <meta property="og:image" content="https://shivadev.com/Banner.png">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="shivadev.com">
     <meta property="twitter:url" content="https://shivadev.com/">
     <meta name="twitter:title" content="Shiva - Game Developer">
-    <meta name="twitter:description" content="I'm Shiva, I’m a student making games and sharing tutorials on YouTube. My goal is to become a successful Game Developer!">
-    <meta name="twitter:image" content="https://shivadev.com/imgs/profile.webp">
 
-    <link rel="icon" type="image/x-icon" href="./imgs/Logo.ico">
-    <link rel="stylesheet" href="./style.css">
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- Fonts and Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/1c379c2efe.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- jQuery Library -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./script.js"></script>
+
+    <!-- Link To script JS -->
+    <script src="../script.js"></script>
+
+    <!--HCaptcha-->
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-38CPT4ZLPX"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-        gtag('config', 'G-38CPT4ZLPX');
+      gtag('config', 'G-38CPT4ZLPX');
     </script>
-    
 </head>
 <body>
 <header>
@@ -60,23 +70,27 @@
     </div>
     <div class="border-line"></div>
 </header>
-<div class="hero">
-    <div class="container">
-        <div class="image-container">
-            <img class="circle" src="./imgs/Profile.webp" alt="Profile Picture">
-        </div>
-        <div class="text-container">
-            <h1 class="work-sans-800">SHIVA</h1>
-            <h3 class="montserrat-regular">A Bit About Me</h3>
-            <p class="montserrat-regular">Hi, I’m <strong>Shiva</strong>! I’m 18 and from India. I’m a Game Developer who’s also tried web development and made some Discord bots while learning JavaScript. Right now, I’m a student making games and sharing tutorials on YouTube. I use Unreal Engine a lot and love playing all kinds of games. My goal is to become a successful Game Developer!</p>
-            <div class="social-icons">
-                <a href="https://youtube.com/@shivasgamingzone?sub_confirmation=1" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.linkedin.com/in/sai-rishik-k/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://discord.gg/zFZ43Hjs3R" target="_blank"><i class="fab fa-discord"></i></a>
-                <a href="http://patreon.com/shivasgaming" target="_blank"><i class="fab fa-patreon"></i></a>
-                <a href="https://instagram.com/shivas_gamingzone" target="_blank"><i class="fab fa-instagram"></i></a>
+<div class="contact-section">
+    <h1 class="work-sans-800 section-title">Contact Me</h1>
+    <div class="contact-container">
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
             </div>
-        </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" rows="5" placeholder="Write Message Here..." required></textarea>
+            </div>
+            <!-- Honeypot field -->
+            <input type="text" name="secret" id="itsasecret" placeholder="BOT" style="display: none;">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <!-- hCaptcha for spam prevention -->               
+            <div class="h-captcha" data-sitekey="7c6909e1-98fd-45b9-87ca-e7bd14ee0e42"></div>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
     </div>
 </div>
 <footer>
@@ -96,6 +110,8 @@
         </div>
     </div>
     <p class="montserrat-500">© 2024 Shiva's Gaming Zone. Licensed under the <a class="montserrat-500" style="color: var(--link-color);" href="https://github.com/Shiva9168/shiva9168.github.io/blob/main/LICENSE" target="_blank">MIT License</a>. Check out the source code on <a class="montserrat-500" style="color: var(--link-color);" href="https://github.com/Shiva9168/shiva9168.github.io" target="_blank">GitHub</a>!</p>
-</footer>    
+</footer>  
+
+
 </body>
 </html>
